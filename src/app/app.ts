@@ -1,12 +1,9 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { CarForm } from './car-form/car-form';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [CarForm],
+  template: ` <app-car-form /> `,
 })
-export class App {
-  protected readonly title = signal('formly-poc');
-}
+export class App {}

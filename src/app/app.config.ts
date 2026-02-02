@@ -3,9 +3,14 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 
+import { withFormlyBootstrap } from '@ngx-formly/bootstrap';
+import { provideFormlyCore } from '@ngx-formly/core';
+import { formlyConfigOption } from './formly.config';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
-  ]
+    provideRouter(routes),
+    provideFormlyCore([...withFormlyBootstrap(), formlyConfigOption]),
+  ],
 };
