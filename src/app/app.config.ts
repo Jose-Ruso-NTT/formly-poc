@@ -5,7 +5,7 @@ import { routes } from './app.routes';
 
 import { withFormlyBootstrap } from '@ngx-formly/bootstrap';
 import { provideFormlyCore } from '@ngx-formly/core';
-import { formlyConfigOption } from './formly.config';
+import { formlyConfigOption } from './formly/formly.config';
 
 export const appConfig: ApplicationConfig = {
   providers: [

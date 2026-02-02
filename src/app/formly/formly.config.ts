@@ -1,6 +1,6 @@
 import { formatDate } from '@angular/common';
 import { ConfigOption, FormlyFieldConfig } from '@ngx-formly/core';
-import { RepeatTypeComponent } from './custom-form-fields/repeat-section/repeat-section';
+import { RepeatTypeComponent } from './repeat-section/repeat-section';
 
 export const formlyConfigOption: ConfigOption = {
   types: [{ name: 'repeat', component: RepeatTypeComponent }],

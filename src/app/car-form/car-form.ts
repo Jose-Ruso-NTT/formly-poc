@@ -2,8 +2,8 @@ import { Component, inject } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { FormlyFieldConfig, FormlyForm } from '@ngx-formly/core';
 import { distinctUntilChanged, of, startWith, switchMap, tap } from 'rxjs';
-import { CustomValidators } from '../custom-validators';
 import { BrandsApi } from '../services/brands-api';
+import { CustomValidators } from '../validators/custom-validators';
 
 const LICENSE_PLACE_REGEX = /^\d{4}\s?[B-DF-HJ-NP-TV-Z]{3}$/;
 const MAX_MANUFACTURE_DATE = new Date().getFullYear();
